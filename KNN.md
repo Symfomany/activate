@@ -1,0 +1,21 @@
+## KNN
+
+En intelligence artificielle, *la méthode des k plus proches voisins* est une méthode d’apprentissage supervisé. 
+En abrégé k-NN ou KNN, de l'anglais k-nearest neighbors.
+
+
+Dans ce cadre, on dispose *d’une base de données d'apprentissage constituée de N couples* « entrée-sortie ». 
+Pour estimer la sortie associée à une nouvelle entrée x, la méthode des k plus proches voisins consiste à prendre en compte (de façon identique) les k échantillons d'apprentissage dont l’entrée est la plus proche de la nouvelle entrée x, selon une distance à définir.
+
+
+Par exemple, dans un problème de classification, on retiendra *la classe la plus représentée parmi les k sorties associées* aux *k entrées les plus proches de la nouvelle entrée x.*
+
+- En classification *k-NN, le résultat est une classe d'appartenance*. Un objet d'entrée est classifié selon le résultat *majoritaire des statistiques* de classes d'appartenance de ses k plus proches voisins, (k est un nombre entier positif généralement petit). Si k = 1, alors l'objet est assigné à la classe d'appartenance de son proche voisin.
+
+- En régression k-NN, *le résultat est la valeur pour cet objet.* Cette valeur est la moyenne des valeurs des k plus proches voisins.
+
+La méthode k-NN est basée sur l'apprentissage préalable, ou l'apprentissage faible, ou la fonction est évaluée localement, le calcul définitif étant effectué à l'issue de la classification. *L'algorithme k-NN est parmi les plus simples des algorithmes de machines apprenantes.*
+
+Que ce soit pour la classification ou la régression, une technique efficace peut être utilisée pour pondérer *l'influence contributive des voisinages*, ainsi les plus proches voisins contribuent-ils plus à la moyenne que les voisins plus éloignés. 
+
+Pour exemple, un schéma courant de pondération consiste à donner à chaque voisin une pondération de 1/d, ou d est la distance de l'élément, à classer ou à pondérer, de ce voisin.
